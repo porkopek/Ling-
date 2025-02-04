@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', Arial, Helvetica,
+    sans-serif !important;
+  width: 350px;
+  background-color: rgb(241, 241, 241);
+  padding: 10px 20px;
+}
+
+#urlInput {
+  margin: 10px 0;
+  display: block;
+  width: 100%;
+  background-color: white;
+
+  border-radius: 2px;
+  border: 1px solid #dededf;
+  box-shadow: none;
+  padding: 9.5px 14px;
+  border-radius: 2px;
+}
+button#addUrlButton {
+  padding: 5px 25px;
+  border-radius: 4px;
+  background-color: #0a84ff;
+  color: white;
+  box-shadow: none;
+  border: none;
+  font-family: 'Segoe Ui';
+}
+button#addUrlButton:hover {
+  cursor: pointer;
+  background-color: #0a84ffb4;
+}
+#urlsSection {
+  margin: 5px 0 0;
+  padding: 5px;
+  overflow: auto;
+  min-height: 55px;
+}
+.important-url {
+  background-color: white;
+  color: black;
+  right: 0;
+  position: relative;
+  padding: 3px 3px 3px 20px;
+  position: relative;
+  border-radius: 2em;
+  border: 1px solid lightgray;
+  margin: 3px 5px 3px 0;
+  font-size: 14px;
+  float: left;
+}
+.url-text {
+  position: relative;
+  bottom: 1px;
+  margin-right: 15px;
+}
+.delete-url {
+  color: #a3a3a3;
+  float: right;
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+  margin-left: 3px;
+  width: 21px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 1px;
+  border-radius: 50%;
+  background-color: rgb(206, 206, 206);
+  color: white;
+}
+.delete-url:hover {
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+}
