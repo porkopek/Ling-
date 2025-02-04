@@ -1,7 +1,7 @@
 //promise to get stored urls
 
 //render the stored urls
-const renderUrls = urls => {
+const renderTags = urls => {
   console.log('urls array ', urls);
   const urlsHTML =
     urls === undefined || urls.length === 0
@@ -41,7 +41,7 @@ const removeUrl = event => {
   chrome.storage.local.get('importantUrls', result => {
     var urls = result['importantUrls'].filter(url => url !== urlToRemove);
     chrome.storage.local.set({ importantUrls: urls });
-    renderUrls(urls);
+    renderTags(urls);
   });
 };
 
@@ -57,9 +57,9 @@ const addUrl = () => {
     var urls = result['importantUrls'];
     var newUrls = urls === undefined ? [url] : [...urls, url];
     chrome.storage.local.set({
-      importantUrls: newUrls
+      importantUrls: newUrls,
     });
-    renderUrls(newUrls);
+    renderTags(newUrls);
   });
 };
 //add url button
@@ -69,5 +69,5 @@ addUrlButton.addEventListener('click', addUrl);
 //execute the promise
 chrome.storage.local.get('importantUrls', result => {
   var urls = result['importantUrls'];
-  renderUrls(urls);
+  renderTags(urls);
 });

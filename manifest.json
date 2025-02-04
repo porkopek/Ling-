@@ -1,15 +1,17 @@
 {
-  "description": "Linguee with Super Powers",
-  "manifest_version": 2,
-  "name": "Linguee+",
+  "description": "Linguee sorted by relevance",
+  "manifest_version": 3,
+  "name": "Lingplus",
   "version": "1.0.3",
+  "permissions": ["storage"],
   "icons": {
-    "64": "icons/linguee+.png"
+    "64": "icons/icon-64.png",
+    "128": "icons/icon-128.png"
   },
-  "permissions": ["activeTab", "storage"],
-  "browser_action": {
-    "default_icon": "icons/linguee+.png",
-    "default_title": "Linguee+",
+
+  "action": {
+    "default_icon": "icons/icon-64.png",
+    "default_title": "Lingplus",
     "default_popup": "popup/popup.html"
   },
   "content_scripts": [
@@ -27,9 +29,7 @@
         "*://*.linguee.it/*",
         "*://*.linguee.bg/*",
         "*://*.linguee.pl/*",
-        "*://*.linguee.eu/*",
-        "*://*.linguee.es/*",
-        "*://*.linguee.es/*"
+        "*://*.linguee.eu/*"
       ],
       "js": ["content_scripts/content_script.js"],
       "css": ["content_scripts/content_script.css"]

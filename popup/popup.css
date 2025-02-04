@@ -3,11 +3,10 @@
   font-size: 16px;
 }
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', Arial, Helvetica,
-    sans-serif !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    'Open Sans', 'Helvetica Neue', Arial, Helvetica, sans-serif !important;
   width: 350px;
-  background-color: rgb(241, 241, 241);
+  background-color: rgb(255, 255, 255);
   padding: 10px 20px;
 }
 
@@ -26,7 +25,7 @@ body {
 button#addUrlButton {
   padding: 5px 25px;
   border-radius: 4px;
-  background-color: #0a84ff;
+  background-color: #0eaf64;
   color: white;
   box-shadow: none;
   border: none;
@@ -34,7 +33,7 @@ button#addUrlButton {
 }
 button#addUrlButton:hover {
   cursor: pointer;
-  background-color: #0a84ffb4;
+  background-color: #0a7443;
 }
 #urlsSection {
   margin: 5px 0 0;
