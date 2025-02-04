@@ -3,13 +3,14 @@ const urlSelector = '.source_url';
 //sort the results
 const sortResults = importantUrls => {
   var parent = document.querySelector('tbody.examples');
-  var sortedListOfNodes = [...document.querySelectorAll('[id*="row"]')].sort(el => {
-    const elementUrl = el.querySelector(urlSelector).innerText;
-
-    if (importantUrls.some(importantUrl => elementUrl.includes(importantUrl))) {
-      return -1;
-    }
-    return 1;
+  var sortedListOfNodes = [...document.querySelectorAll('[id*="row"]')].sort((a, b) => {
+    const aText = a.querySelector(urlSelector).innerText;
+    const bText = b.querySelector(urlSelector).innerText;
+    let aIndex = importantUrls.findIndex(url => aText.includes(url));
+    let bIndex = importantUrls.findIndex(url => bText.includes(url));
+    if (aIndex === -1) aIndex = importantUrls.length;
+    if (bIndex === -1) bIndex = importantUrls.length;
+    return aIndex - bIndex;
   });
 
   //insert the sorted html
