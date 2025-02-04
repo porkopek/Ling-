@@ -2,7 +2,7 @@
   "description": "Linguee sorted by relevance",
   "manifest_version": 3,
   "name": "Lingplus",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "permissions": ["storage"],
   "icons": {
     "64": "icons/icon-64.png",

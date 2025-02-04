@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "build": "node zip.js"
+  },
+  "dependencies": {
+    "archiver": "^5.3.1"
+  }
+}
